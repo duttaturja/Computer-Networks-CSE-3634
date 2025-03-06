@@ -1,0 +1,78 @@
+version 3
+run Lab2_exp5-0-20250305-00:32:05-9456
+attr configname Lab2_exp5
+attr datetime 20250305-00:32:05
+attr datetimef 20250305-003205
+attr experiment Lab2_exp5
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SentinelsE2
+attr processid 9456
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network SentinelsE2
+config SentinelsE2.Turja.limit 8
+config SentinelsE2.Ejaj.limit 6
+config SentinelsE2.Avishek.limit 7
+config SentinelsE2.Rizve.limit 5
+config SentinelsE2.Rahat.limit 9
+config SentinelsE2.Turja.sendMsgOnInit true
+config SentinelsE2.Ejaj.sendMsgOnInit true
+config SentinelsE2.Avishek.sendMsgOnInit true
+config SentinelsE2.Rizve.sendMsgOnInit true
+config SentinelsE2.Rahat.sendMsgOnInit true
+config record-eventlog true
+
+par SentinelsE2.Turja.out.channel typename "\"ned.DelayChannel\""
+par SentinelsE2.Turja.out.channel disabled false
+attr mutable ""
+par SentinelsE2.Turja.out.channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsE2.Rahat.out.channel typename "\"ned.DelayChannel\""
+par SentinelsE2.Rahat.out.channel disabled false
+attr mutable ""
+par SentinelsE2.Rahat.out.channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsE2.Rizve.out.channel typename "\"ned.DelayChannel\""
+par SentinelsE2.Rizve.out.channel disabled false
+attr mutable ""
+par SentinelsE2.Rizve.out.channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsE2.Ejaj.out.channel typename "\"ned.DelayChannel\""
+par SentinelsE2.Ejaj.out.channel disabled false
+attr mutable ""
+par SentinelsE2.Ejaj.out.channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsE2.Avishek.out.channel typename "\"ned.DelayChannel\""
+par SentinelsE2.Avishek.out.channel disabled false
+attr mutable ""
+par SentinelsE2.Avishek.out.channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsE2.Rizve typename "\"SentinelsL2\""
+par SentinelsE2.Rizve sendMsgOnInit true
+par SentinelsE2.Rizve limit 5
+par SentinelsE2.Rahat typename "\"SentinelsL2\""
+par SentinelsE2.Rahat sendMsgOnInit false
+par SentinelsE2.Rahat limit 9
+par SentinelsE2.Turja typename "\"SentinelsL2\""
+par SentinelsE2.Turja sendMsgOnInit false
+par SentinelsE2.Turja limit 8
+par SentinelsE2.Ejaj typename "\"SentinelsL2\""
+par SentinelsE2.Ejaj sendMsgOnInit false
+par SentinelsE2.Ejaj limit 6
+par SentinelsE2.Avishek typename "\"SentinelsL2\""
+par SentinelsE2.Avishek sendMsgOnInit false
+par SentinelsE2.Avishek limit 7
+par SentinelsE2 typename "\"SentinelsE2\""
+

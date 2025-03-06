@@ -1,0 +1,92 @@
+SB ov 1537 ev 2 rid Lab2_exp1-0-20250305-00:27:23-12932
+
+E # 0 t 0 m 1 ce -1 msg -1
+MC id 1 c omnetpp::cModule t SentinelsE2 n SentinelsE2 cm 1
+MDC id 1 d bgb=912,541
+MC id 2 c SentinelsL2 t SentinelsL2 pid 1 n Rizve
+GC m 2 g 0 n in o 0
+GC m 2 g 3 n out o 1
+MDC id 2 d is=vl;p=228,417;i=device/mainframe,#FF80FF
+MC id 3 c SentinelsL2 t SentinelsL2 pid 1 n Rahat
+GC m 3 g 0 n in o 0
+GC m 3 g 3 n out o 1
+MDC id 3 d is=vl;p=228,196;i=device/mainframe,gold
+MC id 4 c SentinelsL2 t SentinelsL2 pid 1 n Turja
+GC m 4 g 0 n in o 0
+GC m 4 g 3 n out o 1
+MDC id 4 d is=vl;p=469,77;i=device/antennatower,red
+MC id 5 c SentinelsL2 t SentinelsL2 pid 1 n Ejaj
+GC m 5 g 0 n in o 0
+GC m 5 g 3 n out o 1
+MDC id 5 d is=vl;p=689,417;i=device/mainframe,#0080FF
+MC id 6 c SentinelsL2 t SentinelsL2 pid 1 n Avishek
+GC m 6 g 0 n in o 0
+GC m 6 g 3 n out o 1
+MDC id 6 d is=vl;p=688,196;i=device/mainframe,#80FF80
+CC sm 4 sg 3 dm 3 dg 0
+CDC sm 4 sg 3 d ""
+CC sm 3 sg 3 dm 2 dg 0
+CDC sm 3 sg 3 d ""
+CC sm 2 sg 3 dm 5 dg 0
+CDC sm 2 sg 3 d ""
+CC sm 5 sg 3 dm 6 dg 0
+CDC sm 5 sg 3 d ""
+CC sm 6 sg 3 dm 4 dg 0
+CDC sm 6 sg 3 d ""
+CMB sm 1 tm 2 m initialize(0)
+- INFO: Sending initial message
+CM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 pe -1
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 2 pe 0
+SH sm 2 sg 3 pd 0.1
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 sm 2 sg 3 st 0 am 5 ag 0 at 0.1 pe 0
+CL id 2 tid 1 eid 2 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 2 pe -1 cid 1
+CME
+CMB sm 1 tm 3 m initialize(0)
+CME
+CMB sm 1 tm 4 m initialize(0)
+CME
+CMB sm 1 tm 5 m initialize(0)
+CME
+CMB sm 1 tm 6 m initialize(0)
+CME
+
+E # 1 t 0.1 m 5 ce 0 msg 1
+- INFO: Ejaj's counter is 1, sending back message
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 5 pe 1
+SH sm 5 sg 3 pd 0.1
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 sm 5 sg 3 st 0.1 am 6 ag 0 at 0.2 pe 1
+CL id 2 tid 1 eid 2 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 5 pe -1 cid 1
+
+E # 2 t 0.2 m 6 ce 1 msg 1
+- INFO: Avishek's counter is 1, sending back message
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 6 pe 2
+SH sm 6 sg 3 pd 0.1
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 sm 6 sg 3 st 0.2 am 4 ag 0 at 0.3 pe 2
+CL id 2 tid 1 eid 2 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 6 pe -1 cid 1
+
+E # 3 t 0.3 m 4 ce 2 msg 1
+- INFO: Turja's counter is 9, sending back message
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 4 pe 3
+SH sm 4 sg 3 pd 0.1
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 sm 4 sg 3 st 0.3 am 3 ag 0 at 0.4 pe 3
+CL id 2 tid 1 eid 2 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 4 pe -1 cid 1
+
+E # 4 t 0.4 m 3 ce 3 msg 1
+- INFO: Rahat's counter is 3, sending back message
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 3 pe 4
+SH sm 3 sg 3 pd 0.1
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 sm 3 sg 3 st 0.4 am 2 ag 0 at 0.5 pe 4
+CL id 2 tid 1 eid 2 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 3 pe -1 cid 1
+
+E # 5 t 0.5 m 2 ce 4 msg 1
+- INFO: Rizve's counter is 1, sending back message
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 2 pe 5
+SH sm 2 sg 3 pd 0.1
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 sm 2 sg 3 st 0.5 am 5 ag 0 at 0.6 pe 5
+CL id 2 tid 1 eid 2 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 2 pe -1 cid 1
+
+E # 6 t 0.6 m 5 ce 5 msg 1
+- INFO: Ejaj's counter reached zero, deleting message
+DM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n SentinelsLabReport2 m 5 pe 6
+
+SE e 0 c 13 m "No more events, simulation completed -- at t=0.6s, event #6"
