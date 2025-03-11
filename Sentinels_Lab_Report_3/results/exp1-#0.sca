@@ -1,0 +1,186 @@
+version 3
+run exp1-0-20250311-22:25:48-1724
+attr configname exp1
+attr datetime 20250311-22:25:48
+attr datetimef 20250311-222548
+attr experiment exp1
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SentinelsR3
+attr processid 1724
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network SentinelsR3
+config SentinelsR3.turja.counter 0
+config SentinelsR3.turja.sendMsgOnInit true
+config SentinelsR3.turja[*].sender 9
+config SentinelsR3.turja[*].receiver 0
+
+par SentinelsR3.turja[3].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[3].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[3].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[7].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[7].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[7].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[6].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[6].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[6].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[4].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[4].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[4].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[8].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[8].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[8].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[7].gate$o[1].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[7].gate$o[1].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[7].gate$o[1].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[0].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[0].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[0].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[5].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[5].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[5].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[1].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[1].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[1].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[3].gate$o[1].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[3].gate$o[1].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[3].gate$o[1].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[2].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[2].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[2].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[3].gate$o[2].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[3].gate$o[2].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[3].gate$o[2].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[4].gate$o[1].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[4].gate$o[1].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[4].gate$o[1].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[5].gate$o[1].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[5].gate$o[1].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[5].gate$o[1].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[4].gate$o[2].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[4].gate$o[2].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[4].gate$o[2].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[0].gate$o[1].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[0].gate$o[1].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[0].gate$o[1].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[7].gate$o[2].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[7].gate$o[2].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[7].gate$o[2].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[4].gate$o[3].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[4].gate$o[3].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[4].gate$o[3].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[8].gate$o[1].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[8].gate$o[1].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[8].gate$o[1].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[9].gate$o[0].channel typename "\"SentinelsR3.Channel\""
+par SentinelsR3.turja[9].gate$o[0].channel disabled false
+attr mutable ""
+par SentinelsR3.turja[9].gate$o[0].channel delay 0.1s
+attr mutable ""
+attr unit s
+par SentinelsR3.turja[0] typename "\"SentinelsL3\""
+par SentinelsR3.turja[0] sendMsgOnInit false
+par SentinelsR3.turja[0] sender 9
+par SentinelsR3.turja[0] receiver 0
+par SentinelsR3.turja[1] typename "\"SentinelsL3\""
+par SentinelsR3.turja[1] sendMsgOnInit false
+par SentinelsR3.turja[1] sender 9
+par SentinelsR3.turja[1] receiver 0
+par SentinelsR3.turja[2] typename "\"SentinelsL3\""
+par SentinelsR3.turja[2] sendMsgOnInit false
+par SentinelsR3.turja[2] sender 9
+par SentinelsR3.turja[2] receiver 0
+par SentinelsR3.turja[3] typename "\"SentinelsL3\""
+par SentinelsR3.turja[3] sendMsgOnInit false
+par SentinelsR3.turja[3] sender 9
+par SentinelsR3.turja[3] receiver 0
+par SentinelsR3.turja[4] typename "\"SentinelsL3\""
+par SentinelsR3.turja[4] sendMsgOnInit false
+par SentinelsR3.turja[4] sender 9
+par SentinelsR3.turja[4] receiver 0
+par SentinelsR3.turja[5] typename "\"SentinelsL3\""
+par SentinelsR3.turja[5] sendMsgOnInit false
+par SentinelsR3.turja[5] sender 9
+par SentinelsR3.turja[5] receiver 0
+par SentinelsR3.turja[6] typename "\"SentinelsL3\""
+par SentinelsR3.turja[6] sendMsgOnInit false
+par SentinelsR3.turja[6] sender 9
+par SentinelsR3.turja[6] receiver 0
+par SentinelsR3.turja[7] typename "\"SentinelsL3\""
+par SentinelsR3.turja[7] sendMsgOnInit false
+par SentinelsR3.turja[7] sender 9
+par SentinelsR3.turja[7] receiver 0
+par SentinelsR3.turja[8] typename "\"SentinelsL3\""
+par SentinelsR3.turja[8] sendMsgOnInit false
+par SentinelsR3.turja[8] sender 9
+par SentinelsR3.turja[8] receiver 0
+par SentinelsR3.turja[9] typename "\"SentinelsL3\""
+par SentinelsR3.turja[9] sendMsgOnInit false
+par SentinelsR3.turja[9] sender 9
+par SentinelsR3.turja[9] receiver 0
+par SentinelsR3 typename "\"SentinelsR3\""
+
