@@ -1,0 +1,48 @@
+version 3
+run General-0-20250501-20:54:41-4576
+attr configname General
+attr datetime 20250501-20:54:41
+attr datetimef 20250501-205441
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RingNetwork
+attr processid 4576
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network RingNetwork
+config sim-time-limit 100s
+config **.numNodes 5
+config **.totalTokens 10
+config **.node[*].cmdenv-log-level info
+
+par RingNetwork.node[0] typename "\"RingNode\""
+par RingNetwork.node[0] nodeId 0
+par RingNetwork.node[0] numNodes 5
+par RingNetwork.node[0] initialTokens 10
+par RingNetwork.node[1] typename "\"RingNode\""
+par RingNetwork.node[1] nodeId 1
+par RingNetwork.node[1] numNodes 5
+par RingNetwork.node[1] initialTokens 0
+par RingNetwork.node[2] typename "\"RingNode\""
+par RingNetwork.node[2] nodeId 2
+par RingNetwork.node[2] numNodes 5
+par RingNetwork.node[2] initialTokens 0
+par RingNetwork.node[3] typename "\"RingNode\""
+par RingNetwork.node[3] nodeId 3
+par RingNetwork.node[3] numNodes 5
+par RingNetwork.node[3] initialTokens 0
+par RingNetwork.node[4] typename "\"RingNode\""
+par RingNetwork.node[4] nodeId 4
+par RingNetwork.node[4] numNodes 5
+par RingNetwork.node[4] initialTokens 0
+par RingNetwork typename "\"RingNetwork\""
+par RingNetwork numNodes 5
+par RingNetwork totalTokens 10
+
