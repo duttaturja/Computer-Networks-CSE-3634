@@ -1,0 +1,60 @@
+version 3
+run Experiment2-0-20250507-01:26:12-4764
+attr configname Experiment2
+attr datetime 20250507-01:26:12
+attr datetimef 20250507-012612
+attr experiment Experiment2
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SentinelsLabReport2
+attr processid 4764
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network SentinelsLabReport2
+config SentinelsLabReport2.globalTokenCount 15
+config SentinelsLabReport2.Turja.limit 10
+config SentinelsLabReport2.Eju.limit 5
+config SentinelsLabReport2.Avishek.limit 9
+config SentinelsLabReport2.Rahat.limit 4
+config SentinelsLabReport2.Rizve.limit 11
+config SentinelsLabReport2.Rahat.sendMsgOnInit true
+config record-eventlog true
+
+par SentinelsLabReport2.Rahat typename "\"Node\""
+par SentinelsLabReport2.Rahat receiverName "\"\""
+attr prompt "Receiver name"
+par SentinelsLabReport2.Rahat limit 4
+attr prompt "Counter limit"
+par SentinelsLabReport2.Rahat sendMsgOnInit true
+par SentinelsLabReport2.Eju typename "\"Node\""
+par SentinelsLabReport2.Eju receiverName "\"\""
+attr prompt "Receiver name"
+par SentinelsLabReport2.Eju limit 5
+attr prompt "Counter limit"
+par SentinelsLabReport2.Eju sendMsgOnInit false
+par SentinelsLabReport2.Avishek typename "\"Node\""
+par SentinelsLabReport2.Avishek receiverName "\"\""
+attr prompt "Receiver name"
+par SentinelsLabReport2.Avishek limit 9
+attr prompt "Counter limit"
+par SentinelsLabReport2.Avishek sendMsgOnInit false
+par SentinelsLabReport2.Turja typename "\"Node\""
+par SentinelsLabReport2.Turja receiverName "\"\""
+attr prompt "Receiver name"
+par SentinelsLabReport2.Turja limit 10
+attr prompt "Counter limit"
+par SentinelsLabReport2.Turja sendMsgOnInit false
+par SentinelsLabReport2.Rizve typename "\"Node\""
+par SentinelsLabReport2.Rizve receiverName "\"\""
+attr prompt "Receiver name"
+par SentinelsLabReport2.Rizve limit 11
+attr prompt "Counter limit"
+par SentinelsLabReport2.Rizve sendMsgOnInit false
+par SentinelsLabReport2 typename "\"SentinelsLabReport2\""
+
